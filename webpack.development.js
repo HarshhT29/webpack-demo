@@ -12,6 +12,9 @@ module.exports = {
     path: path.resolve(__dirname, "dist"),
     clean: true,
   },
+  devServer: {
+    static: "./dist",
+  },
   module: {
     rules: [
       {
@@ -27,6 +30,9 @@ module.exports = {
         type: "asset/resource",
       },
     ],
+  },
+  optimization: {
+    runtimeChunk: "single",
   },
   plugins: [
     new HtmlWebpackPlugin({
