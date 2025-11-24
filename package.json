@@ -7,7 +7,8 @@
     "build:prod": "webpack",
     "build:dev": "webpack --config webpack.development.js",
     "build:watch:dev": "webpack --config webpack.development.js --watch",
-    "dev:start": "webpack serve --config webpack.development.js --open"
+    "dev:start": "webpack serve --config webpack.development.js --open",
+    "server:start": "node server.js"
   },
   "keywords": [],
   "author": "",
